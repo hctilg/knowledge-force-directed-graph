@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Force Directed Knowledge Graph</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  outline: 0px;
+  margin: 0px;
+}
+
+body{
+  background: #fff;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+canvas {
+  display: block;
+}
+  </style>
+  </head>
+  <body>
+    <canvas id="graph"></canvas>
+    <script>
+const edges = [
+  ["Voice Logs","Technology"],
+  ["Voice Logs","Doctor"],
+  ["Voice Logs","Psychology"],
+  ["Voice Logs","Projects"],
+  ["Voice Logs","Love-Life"],
+
+  ["Technology","NLP"],
+  ["Technology","DevOps"],
+  ["Technology","Development"],
+  ["Technology","Data Structures"],
+  ["Technology","Algorithms"],
+
+  ["Doctor","Blood Test"],
+  ["Doctor","Self-Injection"],
+  ["Doctor","HRT"],
+  ["Doctor","EEG"],
+  ["Doctor","Psychology"],
+
+  ["Psychology","PTSD"],
+  ["Psychology","Anxiety"],
+  ["Psychology","Sleep"],
+  ["Psychology","EEG"],
+
+  ["Anxiety","PTSD"],
+
+  ["Development","Projects"],
+  ["Development","DevOps"],
+
+  ["Projects","Ideas"],
+  ["Projects","Algorithms"],
+
+  ["Algorithms","Data Structures"],
+
+  ["Ideas","NLP"],
+];
+    </script>
+    <script src="./knowledge-force-directed-graph-.js"></script>
+  </body>
+</html>
